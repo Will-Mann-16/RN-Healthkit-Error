@@ -48,5 +48,9 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSHealthShareUsageDescription</key>
+	<string>HealthKit needs to access your health data to provide you with the best experience.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>HealthKit needs to access your health data to provide you with the best experience.</string>
 </dict>
 </plist>

@@ -5,6 +5,9 @@
  * @format
  */
 
+import Healthkit, {
+  HKWorkoutTypeIdentifier,
+} from '@kingstinct/react-native-healthkit';
 import React from 'react';
 import type {PropsWithChildren} from 'react';
 import {
@@ -61,6 +64,10 @@ function App(): React.JSX.Element {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+
+  Healthkit.useSubscribeToChanges(HKWorkoutTypeIdentifier, async () => {
+    console.log('made it here');
+  });
 
   return (
     <SafeAreaView style={backgroundStyle}>
